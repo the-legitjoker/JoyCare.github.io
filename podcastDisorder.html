@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Disorders </title>
+    <link rel="stylesheet" href="./css/podcastDisorder.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html"> HOME </a> </li>
+            <li><a href="aboutus.html"> ABOUT US </a> </li>
+            <li><a href="#"> SERVICES </a> </li>
+            <div class="dropdown">
+              <button class="dropbtn">PODCASTS<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="podcastAddiction.html">ADDICTION</a>
+                  <a href="podcastAnxietyStress.html">ANXIETY/STRESS</a>
+                  <a href="podcastDepression.html">DEPRESSION</a>
+                </div>
+            </div>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1> DISORDER </h1>
+        <p> Please Click On The Blurred Image<br>To View The Podcast.<br>Thank you.</p>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic1.jpg" onclick="playVideo('podcasts/disorder/Episode-1.mp4')">
+          </div>
+          <p> How to deal with a panic attack  tips to prevent panic attacks in the future </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic2.jpg" onclick="playVideo('podcasts/disorder/Episode-2.mp4')">
+          </div>
+          <p>  How to cure seasonal affective disorder wellness tips from leading expert Dr. Lipman </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic3.jpg" onclick="playVideo('podcasts/disorder/Episode-3.mp4')">
+          </div>
+          <p> 11 ways to cope with bipolar disorder </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic4.jpg" onclick="playVideo('podcasts/disorder/Episode-4.mp4')">
+          </div>
+          <p>    Grief Trauma and Personality Disorders  </p>
+        </div>
+      </div>
+
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic5.jpg" onclick="playVideo('podcasts/disorder/Episode-5.mp4')">
+          </div>
+          <p> An Inside Look At Eating Disorders </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic6.jpg" onclick="playVideo('podcasts/disorder/Episode-6.mp4')">
+          </div>
+          <p> Eating Disorder Recovery </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic7.jpg" onclick="playVideo('podcasts/disorder/Episode-7.mp4')">
+          </div>
+          <p> Strong Independent Women - an eating disorder short film </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic8.jpg" onclick="playVideo('podcasts/disorder/Episode-8.mp4')">
+          </div>
+          <p> Recovery is Possible Understanding Borderline Personality Disorder  </p>
+        </div>
+      </div>
+
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic9.jpg" onclick="playVideo('podcasts/disorder/Episode-9.mp4')">
+          </div>
+          <p> How to deal with anger and toxic people </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic4.jpg" onclick="playVideo('podcasts/disorder/Episode-10.mp4')">
+          </div>
+          <p> How to recover from disordered eating tips on overcoming guilt,shame and perfectionism </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic11.jpg" onclick="playVideo('podcasts/disorder/Episode-11.mp4')">
+          </div>
+          <p> How to manage your mental health </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic12.png" onclick="playVideo('podcasts/disorder/Episode-12.mp4')">
+          </div>
+          <p>  When a Mental Crisis Results in Jail or Hospitalization </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="video_player" class="video-player">
+      <video id="videoplayer" width="100%" controls autoplay>
+        <source src="podcasts/Menopause.mp4" type="video/mp4">
+      </video>
+      <img class="btn" src="images/close.png" alt="" onclick="stopVideo() ">
+    </div>
+
+    <script>
+      var video_player = document.getElementById('video_player');
+      var videoplayer = document.getElementById('videoplayer');
+
+      function stopVideo(){
+        video_player.style.display ='none';
+      }
+
+      function playVideo(file){
+        videoplayer.src = file;
+        video_player.style.display = "block";
+      }
+    </script>
+
+    <footer>
+      <div class="flex">
+        <small>Copyright @2021 All rigths reserved | <img src="images/meet.ico" alt="favicon"> Patel Malhar. </small>
+      </div>
+    </footer>
+
+  </body>
+</html>

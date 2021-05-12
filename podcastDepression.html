@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Depression </title>
+    <link rel="stylesheet" href="./css/podcastDepression.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html"> HOME </a> </li>
+            <li><a href="aboutus.html"> ABOUT US </a> </li>
+            <li><a href="#"> SERVICES </a> </li>
+            <div class="dropdown">
+              <button class="dropbtn">PODCASTS<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="podcastAddiction.html">ADDICTION</a>
+                  <a href="podcastAnxietyStress.html">ANXIETY/STRESS</a>
+                  <a href="podcastDisorder.html">DISORDER</a>
+                </div>
+            </div>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1> DEPRESSION </h1>
+        <p> Please Click On The Blurred Image<br>To View The Podcast.<br>Thank you.</p>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic1.jpg" onclick="playVideo('podcasts/depression/Episode-1.mp4')">
+          </div>
+          <p> All the lonely people by Karen Dolva   </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic2.jpg" onclick="playVideo('podcasts/depression/Episode-2.mp4')">
+          </div>
+          <p> Depression Suicide and the Power of Hope by Gill Hayes </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic3.jpg" onclick="playVideo('podcasts/depression/Episode-3.mp4')">
+          </div>
+          <p> Fight Depression </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic4.jpg" onclick="playVideo('podcasts/depression/Episode-4.mp4')">
+          </div>
+          <p>  Tragedies, Triumphs, Breakups, Breakthroughs </p>
+        </div>
+      </div>
+
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic5.jpg" onclick="playVideo('podcasts/depression/Episode-5.mp4')">
+          </div>
+          <p> I'm Fine - Learning To Live With Depression  Jake Tyler  </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic6.jpg" onclick="playVideo('podcasts/depression/Episode-6.mp4')">
+          </div>
+          <p> The Suicide  Depression </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic7.jpg" onclick="playVideo('podcasts/depression/Episode-7.mp4')">
+          </div>
+          <p> Dealing with Depression </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic8.jpg" onclick="playVideo('podcasts/depression/Episode-8.mp4')">
+          </div>
+          <p> Lilly Singh On Being Grateful For Depression  </p>
+        </div>
+      </div>
+
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic9.jpg" onclick="playVideo('podcasts/depression/Episode-9.mp4')">
+          </div>
+          <p> WHEN YOU FEEL LONELY - by Trent Shelton! </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic4.jpg" onclick="playVideo('podcasts/depression/Episode-10.mp4')">
+          </div>
+          <p> Overcoming Depression Anxiety  </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic11.jpg" onclick="playVideo('podcasts/depression/Episode-11.mp4')">
+          </div>
+          <p> How to get rid of loneliness and become happy by Olivia Remes    </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic12.png" onclick="playVideo('podcasts/depression/Episode-12.mp4')">
+          </div>
+          <p> Joe Rogan - Depression Isn't a Chemical Imbalance </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="video_player" class="video-player">
+      <video id="videoplayer" width="100%" controls autoplay>
+        <source src="podcasts/Menopause.mp4" type="video/mp4">
+      </video>
+      <img class="btn" src="images/close.png" alt="" onclick="stopVideo() ">
+    </div>
+
+    <script>
+      var video_player = document.getElementById('video_player');
+      var videoplayer = document.getElementById('videoplayer');
+
+      function stopVideo(){
+        video_player.style.display ='none';
+      }
+
+      function playVideo(file){
+        videoplayer.src = file;
+        video_player.style.display = "block";
+      }
+    </script>
+
+    <footer>
+      <div class="flex">
+        <small>Copyright @2021 All rigths reserved | <img src="images/meet.ico" alt="favicon"> Patel Malhar. </small>
+      </div>
+    </footer>
+
+  </body>
+</html>

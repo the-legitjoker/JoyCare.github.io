@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Addiction </title>
+    <link rel="stylesheet" href="./css/podcastAddiction.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html"> HOME </a> </li>
+            <li><a href="aboutus.html"> ABOUT US </a> </li>
+            <li><a href="#"> SERVICES </a> </li>
+            <div class="dropdown">
+              <button class="dropbtn">PODCASTS<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="podcastAnxietyStress.html">ANXIETY/STRESS</a>
+                  <a href="podcastDepression.html">DEPRESSION</a>
+                  <a href="podcastDisorder.html">DISORDER</a>
+                </div>
+            </div>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1> ADDICTION </h1>
+        <p> Please Click On The Blurred Image<br>To View The Podcast.<br>Thank you.</p>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic1.jpg" onclick="playVideo('podcasts/addiction/Episode-1.mp4')">
+          </div>
+          <p> Overcoming Food Addictions and Eating Disorders </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic2.jpg" onclick="playVideo('podcasts/addiction/Episode-2.mp4')">
+          </div>
+          <p> How Claudia Christian Overcame Alcoholism </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic3.jpg" onclick="playVideo('podcasts/addiction/Episode-3.mp4')">
+          </div>
+          <p> Overcoming Addiction With Dr. Adi Jaffe </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic4.jpg" onclick="playVideo('podcasts/addiction/Episode-4.mp4')">
+          </div>
+          <p> Wasted Exposing the Family Effect of Addiction  Sam Fowler  </p>
+        </div>
+      </div>
+
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic5.jpg" onclick="playVideo('podcasts/addiction/Episode-5.mp4')">
+          </div>
+          <p> Overcoming addiction  how to help someone who is struggling with addiction </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic6.jpg" onclick="playVideo('podcasts/addiction/Episode-6.mp4')">
+          </div>
+          <p> Seeds Weeds  Intention  Jay Shetty  Russell Brand </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic7.jpg" onclick="playVideo('podcasts/addiction/Episode-7.mp4')">
+          </div>
+          <p> The Best Explanation of Addiction I’ve Ever Heard – Dr. Gabor Maté </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic8.jpg" onclick="playVideo('podcasts/addiction/Episode-8.mp4')">
+          </div>
+          <p> Podcast Drug Addiction and Abuse feat. Dr Keiran Kennedy </p>
+        </div>
+      </div>
+
+      <div class="column" >
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic9.jpg" onclick="playVideo('podcasts/addiction/Episode-9.mp4')">
+          </div>
+          <p> What Really Causes Drug Addiction  Joe Rogan  Johann Hari </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic4.jpg" onclick="playVideo('podcasts/addiction/Episode-10.mp4')">
+          </div>
+          <p> Lessons a drug addict can teach you  Lauren Windle </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic11.jpg" onclick="playVideo('podcasts/addiction/Episode-11.mp4')">
+          </div>
+          <p> Jay Shetty’s Best Advice For Well-Being Inside the Mind  </p>
+        </div>
+        <div class="small-img-row">
+          <div class="small-img">
+            <img src="images/portraits/pic12.png" onclick="playVideo('podcasts/addiction/Episode-12.mp4')">
+          </div>
+          <p> The Craving Brain Neuroscience of Uncontrollable Urges </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="video_player" class="video-player">
+      <video id="videoplayer" width="100%" controls autoplay>
+        <source src="podcasts/Menopause.mp4" type="video/mp4">
+      </video>
+      <img class="btn" src="images/close.png" alt="" onclick="stopVideo() ">
+    </div>
+
+    <script>
+      var video_player = document.getElementById('video_player');
+      var videoplayer = document.getElementById('videoplayer');
+
+      function stopVideo(){
+        video_player.style.display ='none';
+      }
+
+      function playVideo(file){
+        videoplayer.src = file;
+        video_player.style.display = "block";
+      }
+    </script>
+
+    <footer>
+      <div class="flex">
+        <small>Copyright @2021 All rigths reserved | <img src="images/meet.ico" alt="favicon"> Patel Malhar. </small>
+      </div>
+    </footer>
+
+  </body>
+</html>
